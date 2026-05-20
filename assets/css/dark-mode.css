@@ -1,0 +1,104 @@
+/* ==========================================
+   MODO ESCURO (THE AKAI KITSUNE THEME)
+========================================== */
+@media (prefers-color-scheme: dark) {
+    
+    /* Fundo Geral - A palavra 'background' apaga a imagem de textura original */
+    body, #page-wrapper, section#header, section#main, section#footer {
+        background: #131314 !important; 
+        color: #e3e3e3 !important; 
+    }
+
+    #page-wrapper p, #page-wrapper li, #page-wrapper span, #page-wrapper div {
+        color: #e3e3e3 !important;
+    }
+
+    #page-wrapper strong, #page-wrapper b, 
+    h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, a {
+        color: #ffffff !important;
+    }
+
+    /* CORREÇÃO DEFINITIVA DOS TÍTULOS (My Projects, Featured Projects) */
+    header.major h2, 
+    #main .major h2, 
+    #main header.major h2 {
+        background: #131314 !important; /* Limpa a imagem branca e força o fundo escuro */
+        background-image: none !important;
+        color: #ffffff !important;
+    }
+
+    header.major p, 
+    #main header.major p {
+        background: transparent !important;
+        color: #ffffff !important;
+    }
+
+    #header h1 { font-size: 3.5em !important; }
+    #header h1 a {
+        font-size: 1.2em !important; 
+        color: #ffffff !important; 
+        text-decoration: none !important;
+    }
+
+    #nav { background-color: #1e1e20 !important; }
+    #nav > ul > li, #nav > ul > li.current, #nav > ul > li:hover {
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    #nav > ul > li > a { 
+        color: #ffffff !important; 
+        font-size: 1.4em !important; 
+        font-weight: 700 !important; 
+    }
+    
+    #nav > ul > li.current > a, #nav > ul > li:hover > a {
+        background-color: #333333 !important; 
+        color: #ffffff !important; 
+        border-radius: 5px !important; 
+    }
+
+    .box {
+        background: #1e1e20 !important;
+        background-image: none !important;
+        border-color: #333333 !important;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.4) !important;
+    }
+    
+    #main .box strong, #main .box b {
+        color: #ffffff !important;
+        font-weight: bold !important;
+    }
+
+    #footer, #footer h2, #footer p, #footer a, #copyright, #copyright li, #copyright a {
+        color: #ffffff !important;
+    }
+
+    /* CORREÇÃO DOS ÍCONES (Unifica o vermelho e remove a segunda cor) */
+    .icon.featured {
+        background-color: #d32f2f !important;
+    }
+
+    /* Força a 'sombra' ou base do ícone (o pseudo-elemento :after) a ter a mesma cor */
+    .icon.featured:after {
+        border-top-color: #d32f2f !important;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+    }
+
+    /* Caso algum ícone tenha a classe 'alt' ou 'alt2', forçamos a cor também */
+    .icon.featured.alt, .icon.featured.alt2 {
+        background-color: #d32f2f !important;
+    }
+    .icon.featured.alt:after, .icon.featured.alt2:after {
+        border-top-color: #d32f2f !important;
+    }
+
+    .button:hover, .button.alt:hover, input[type="submit"]:hover, input[type="button"]:hover {
+        background-color: #b71c1c !important;
+        border-color: #b71c1c !important;
+        color: #ffffff !important;
+    }
+
+    #intro section:before, #intro section:after { display: none !important; }
+}

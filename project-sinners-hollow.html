@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sinner's Hollow - Project Details</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/dark-mode.css" />
+        <style>
+            /* Estilo para deixar o vídeo do YouTube responsivo */
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%; /* Proporção 16:9 */
+                padding-top: 30px; 
+                height: 0; 
+                overflow: hidden;
+                margin-bottom: 2em;
+                border-radius: 6px;
+                box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+            }
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .tech-badge {
+                display: inline-block;
+                background-color: #333333;
+                color: #ffffff;
+                padding: 0.2em 0.8em;
+                border-radius: 4px;
+                font-size: 0.9em;
+                margin-right: 0.5em;
+                margin-bottom: 0.5em;
+                font-weight: bold;
+            }
+            @media (prefers-color-scheme: light) {
+                .tech-badge {
+                    background-color: #e5e5e5;
+                    color: #111111;
+                }
+            }
+        </style>
+    </head>
+    <body class="no-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <section id="header">
+                    <h1><a href="home.html">Nicolas G. W. Rocha</a></h1>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li class="current"><a href="projects.html">All Projects</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </section>
+
+            <section id="main">
+                    <div class="container">
+                        <article class="box post">
+                            <header class="major">
+                                <h2>Sinners' Hollow</h2>
+                                <p>PC Development Case Study | Unreal Engine 5 & Blueprints</p>
+                            </header>
+
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/SUA_VIDEO_ID_AQUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+
+                            <div style="margin-bottom: 2.5em;">
+                                <span class="tech-badge">Unreal Engine 5</span>
+                                <span class="tech-badge">Game Design</span>
+                                <span class="tech-badge">Level Design</span>
+                                <span class="tech-badge">Blueprints</span>
+                                <span class="tech-badge">Animations</span>
+                                <span class="tech-badge">Narratives</span>
+                            </div>
+
+                            <ul class="actions" style="margin-bottom: 3em;">
+                                <li><a href="https://github.com/NRYazawa" target="_blank" class="button"><i class="icon brands fa-github"></i> View Repository</a></li>
+                                <li><a href="https://theakaikitsune.itch.io/sinners-hollow" target="_blank" class="button alt"><i class="icon brands fa-itch-io"></i> Play on Itch.io</a></li>
+                            </ul>
+
+                            <h3>Project Overview</h3>
+                            <p>
+                                <strong>Sinners' Hollow</strong> is a psychological horror playable demo that emphasizes atmosphere, tension, and intricate backend systems. Set in a desolate, isolated village, the game serves as a primary showcase for production-ready engineering in Unreal Engine 5. The core focus of development was translating classic psychological horror tropes into robust, scalable, and optimized systems. The game was developed in less than 2 months, where I worked on all aspects, from core mechanics to level design and animations.
+                            </p>
+
+                            <br />
+
+                            <h3>Key Technical Implementations</h3>
+                            
+                            <h4>1. Item, Inventory, and Inspection Systems</h4>
+                            <p>
+                                Designed and implemented an item system with inspection mechanics that allows players to examine puzzle objects that they collect, every item has a detail showing its use, such as a key with a tag saying "entrance", or a date on a cassete tape that can be used to understand more of the narrative.
+                            </p>
+
+                            <h4>2. Puzzle Design & Integration</h4>
+                            <p>
+                                For a more Resident Evil-like approach, I created a simple puzzle system that allows the player to interact with collectable objects in the level, so they can be used to resolve puzzles and progress in the game. For example, the player can find a fuse in the level and restore the power, so they don't have to rely on a flashlight, or find a cassette tape that can be used in a tape player to trigger an audio, helping the player understand both how to open a door and the narrative.
+                            </p>
+
+                            <h4>3. Cinematic Mechanics for Player Immersion</h4>
+                            <p>
+                                For this project, I implemented custom mechanics focusing on player immersion, such as a dynamic flashlight system with realistic light attenuation, camera shake for walking, simulating a real life experience, and a dynamic camera focus system that adjusts depth of field based on player aim, enhancing the atmosphere.
+                            </p>
+
+                            <h4>4. Complex Narrative and Metahuman</h4>
+                            <p>
+                                In the early development stages, I created almost 30 pages of narrative documentation. Of course, almost all of it was discarded during the development due to a short development cycle and the need to focus on core mechanics to deliver a playable MVP. It involved a complex story about religion, war, and cults. There were no grotesque monsters, zombies, or aliens—only humans, and an exploration of how far people can go to forcibly spread their beliefs. Additionally, the Metahuman Character Creation was deeply explored to deliver the most Brazilian character possible for the game, utilizing all the customization options. Ultimately, it was not used in cinematics for the final game, but the player model still is, and of course, it provided valuable learning experience.
+                            </p>
+
+                            <br />
+
+                            <h3>Development Retrospective</h3>
+                            <p>
+                                Building Sinners' Hollow and living in this project for 2 months was an intense and really rewarding experience. I learned a lot of new technics in Unreal Engine, such as animating small objects using a timeline, or creating custom interaction systems using blueprints, and I was really proud of the final result, it wasn't perfect, but it showed promise and potential. One day, I hope to find the time to return to this project and expand it, delivering the complete story and mechanics that I originally envisioned. Also, this game has a really cool Easter Egg that I won't spoil, but if you find time to just relax and watch some TV in the game, I would recommend it.
+                            </p>
+
+                            <hr style="margin: 3em 0;" />
+
+                            <ul class="actions threaded">
+                                <li><a href="projects.html" class="button alt"><i class="fas fa-arrow-left"></i> Back to Projects</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+            <section id="footer" style="padding: 3em 0 1em 0; text-align: center;">
+                    <div class="container">
+                        <ul class="social" style="margin-bottom: 2em;">
+                            <li><a class="icon brands fa-github" href="https://github.com/NRYazawa" target="_blank"><span class="label">GitHub</span></a></li>
+                            <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/nicolas-rocha-86336137a/" target="_blank"><span class="label">LinkedIn</span></a></li>
+                            <li><a class="icon brands fa-discord" href="https://discordapp.com/users/722147308422299739" target="_blank"><span class="label">Discord</span></a></li>
+                            <li><a class="icon brands fa-itch-io" href="https://theakaikitsune.itch.io/" target="_blank"><span class="label">Itch.io</span></a></li>
+                            <li><a class="icon brands fa-youtube" href="https://www.youtube.com/@NRYazawa" target="_blank"><span class="label">YouTube</span></a></li>
+                        </ul>
+                        <div id="copyright" style="margin-top: 2em;">
+                            <ul class="links">
+                                <li>&copy; Nicolas G. W. Rocha. All rights reserved.</li>
+                                <li>Base design by: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+    </body>
+</html>
