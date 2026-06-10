@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>DigiAid - Download e Detalhes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/dark-mode.css" />
+        <style>
+            /* Estilos específicos para o vídeo e badges */
+            .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; margin-bottom: 3em; border-radius: 6px; box-shadow: 0px 4px 15px rgba(0,0,0,0.3); }
+            .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+            .tech-badge { display: inline-block; background-color: #333333; color: #ffffff; padding: 0.3em 1em; border-radius: 4px; font-size: 0.85em; margin-right: 0.5em; margin-bottom: 0.5em; font-weight: bold; }
+            
+            /* Estilo para intercalar fotos e textos do aplicativo */
+            .app-feature { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 4em; gap: 3em; }
+            .app-feature .text-content { flex: 1 1 400px; }
+            
+            /* Trava de segurança: impede que imagens 1920x1080 engulam a tela */
+            .app-feature img { border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 45%; height: auto; flex: 1 1 300px; }
+            
+            /* Inverte a ordem visual em linhas alternadas (efeito zigue-zague) */
+            .app-feature.reverse { flex-direction: row-reverse; }
+
+            /* Comportamento perfeito para o telemóvel: Texto sempre em cima da imagem */
+            @media screen and (max-width: 800px) {
+                .app-feature, .app-feature.reverse { flex-direction: column; text-align: left; }
+                .app-feature .text-content { order: 1; }
+                .app-feature img { max-width: 100%; width: 100%; order: 2; margin-top: 1em; }
+            }
+
+            /* Estilo do bloco de download */
+            .download-section { text-align: center; margin-top: 4em; padding: 3em; background-color: rgba(0,0,0,0.05); border-radius: 8px; border: 2px solid #e5e5e5; }
+            
+            @media (prefers-color-scheme: light) { 
+                .tech-badge { background-color: #e5e5e5; color: #111111; } 
+            }
+            @media (prefers-color-scheme: dark) {
+                .download-section { background-color: rgba(255,255,255,0.02); border-color: #333333; }
+            }
+        </style>
+    </head>
+    <body class="no-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <section id="header">
+                <h1><a href="index.html">Nicolas G. W. Rocha</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li class="current"><a href="projects.html">All Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section id="main">
+                <div class="container">
+                    <article class="box post">
+                        
+                        <header class="major" style="text-align: center; margin-bottom: 3em;">
+                            <h2>DigiAid</h2>
+                            <p>Seu passaporte para o mundo digital</p>
+                        </header>
+
+                        <!-- TRAILER DO APP -->
+                        <div class="video-container">
+                            <iframe src="https://www.youtube.com/embed/7P-vDVOljcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <!-- PERGUNTA 1: Texto na Esquerda, Imagem na Direita -->
+                        <div class="app-feature">
+                            <div class="text-content">
+                                <h3>O que é o DigiAid?</h3>
+                                <p>
+                                    O <strong>DigiAid</strong> é um aplicativo focado em promover a inclusão digital da terceira idade. Muitas pessoas mais velhas sentem-se intimidadas pelas novas tecnologias por medo de errar, apagar algo importante ou cair em golpes. O DigiAid nasceu para acabar com esse medo, oferecendo um ambiente seguro onde o utilizador pode aprender e se modernizar ao seu próprio ritmo.
+                                </p>
+                            </div>
+                            <img src="images/digiaid-tela1.jpg" alt="Página inicial e interface amigável do DigiAid" />
+                        </div>
+
+                        <!-- PERGUNTA 2: Imagem na Esquerda, Texto na Direita -->
+                        <div class="app-feature reverse">
+                            <div class="text-content">
+                                <h3>Como ele funciona?</h3>
+                                <p>
+                                    Na prática, o DigiAid atua como um <strong>simulador de redes sociais</strong> e interfaces modernas. Através de pequenas missões práticas e guiadas, o utilizador aprende a enviar mensagens, publicar fotos, identificar botões comuns e até mesmo a reconhecer anúncios e perfis falsos. O aplicativo oferece feedback imediato, parabenizando os acertos e orientando gentilmente nos erros.
+                                </p>
+                            </div>
+                            <img src="images/digiaid-tela2.jpg" alt="Exemplo de missão guiada no aplicativo" />
+                        </div>
+
+                        <!-- PERGUNTA 3: Texto na Esquerda, Imagem na Direita -->
+                        <div class="app-feature">
+                            <div class="text-content">
+                                <h3>É seguro?</h3>
+                                <p>
+                                    <strong>Totalmente.</strong> O DigiAid é um ambiente fechado e 100% simulado (funciona offline). Nenhum dado real é enviado para a internet e não existe qualquer tipo de interação com pessoas desconhecidas. É literalmente um espaço livre de riscos: uma "caixa de areia" digital onde não há consequências para clicar no botão errado.
+                                </p>
+                            </div>
+                            <img src="images/digiaid-tela3.jpg" alt="Tela de ambiente simulado offline" />
+                        </div>
+
+                        <!-- PERGUNTA 4 (SEÇÃO DE DOWNLOAD VIA GOOGLE DRIVE) -->
+                        <div class="download-section">
+                            <h3 style="margin-bottom: 0.5em;">Por onde posso baixar?</h3>
+                            <p style="margin-bottom: 2em;">O aplicativo está disponível gratuitamente. Faça o download do arquivo de instalação (APK) de forma segura através do nosso Google Drive clicando no botão abaixo.</p>
+                            
+                            <a href="https://drive.google.com/file/d/1RsJP8lfh9yX40Mtw_Czl9xXI5_YqTJPR/view?usp=sharing" target="_blank" class="button large" style="font-size: 1.2em; padding: 1em 3em; border-radius: 8px;">
+                                <i class="icon solid fa-download" style="margin-right: 10px;"></i> Baixar APK
+                            </a>
+                            
+                            <p style="font-size: 0.85em; color: #888888; font-style: italic; margin-top: 2em;">
+                                *Nota de Segurança: Como o aplicativo está a ser baixado diretamente do nosso site e não pela Google Play Store, o seu dispositivo Android perguntará se deseja permitir a instalação. Pode aceitar e prosseguir com segurança.
+                            </p>
+                        </div>
+
+                    </article>
+                </div>
+            </section>
+
+            <section id="footer" style="padding: 3em 0 1em 0; text-align: center;">
+                <div class="container">
+                    <ul class="social" style="margin-bottom: 2em;">
+                        <li><a class="icon brands fa-github" href="https://github.com/NRYazawa" target="_blank"><span class="label">GitHub</span></a></li>
+                        <li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/nicolas-rocha-86336137a/" target="_blank"><span class="label">LinkedIn</span></a></li>
+                        <li><a class="icon brands fa-discord" href="https://discordapp.com/users/722147308422299739" target="_blank"><span class="label">Discord</span></a></li>
+                        <li><a class="icon brands fa-itch-io" href="https://theakaikitsune.itch.io/" target="_blank"><span class="label">Itch.io</span></a></li>
+                        <li><a class="icon brands fa-youtube" href="https://www.youtube.com/@NRYazawa" target="_blank"><span class="label">YouTube</span></a></li>
+                    </ul>
+                    <div id="copyright" style="margin-top: 2em;">
+                        <ul class="links">
+                            <li>&copy; Nicolas G. W. Rocha. All rights reserved.</li>
+                            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.dropotron.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
