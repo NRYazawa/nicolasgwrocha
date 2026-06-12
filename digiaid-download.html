@@ -16,17 +16,17 @@
             .app-feature { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin-bottom: 4em; gap: 3em; }
             .app-feature .text-content { flex: 1 1 400px; }
             
-            /* Trava de segurança: impede que imagens 1920x1080 engulam a tela */
-            .app-feature img { border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 45%; height: auto; flex: 1 1 300px; }
+            /* Trava de segurança: impede que imagens engulam a tela e corrige o "repuxado" mantendo a proporção */
+            .app-feature img { border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); max-width: 45%; height: auto; flex: 1 1 300px; object-fit: cover; }
             
             /* Inverte a ordem visual em linhas alternadas (efeito zigue-zague) */
             .app-feature.reverse { flex-direction: row-reverse; }
 
-            /* Comportamento perfeito para o telemóvel: Texto sempre em cima da imagem */
+            /* Comportamento perfeito para o telemóvel: Texto sempre em cima da imagem com menos espaço vazio */
             @media screen and (max-width: 800px) {
-                .app-feature, .app-feature.reverse { flex-direction: column; text-align: left; }
+                .app-feature, .app-feature.reverse { flex-direction: column; text-align: left; gap: 1em; }
                 .app-feature .text-content { order: 1; }
-                .app-feature img { max-width: 100%; width: 100%; order: 2; margin-top: 1em; }
+                .app-feature img { max-width: 100%; width: 100%; order: 2; margin-top: 0; }
             }
 
             /* Estilo do bloco de download */
